@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Monaco"; 
+    src: url("./Ubuntu_Mono/UbuntuMono-Regular.ttf");
+}
+
+*{
+  font-family: "Monaco";
+  background-color: black;
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  width: 33%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  font-size: 25px;
+}
+
+.bottomnav {
+  overflow: hidden;
+  position: fixed;
+  top:95%;
+  width: 100%;
+}
+
+.bottomnav a {
+  float: left;
+  text-align: center;
+  width: 50%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.bottomnav a:hover {
+  font-size: 25px;
+}
+
+.main_image{
+    height: 200px;
+    width: 400px;
+    position: fixed;
+    top: 25%;
+    left: 75%;
+    margin-top: -100px;
+    margin-left: -200px;
+    font-size: 70px;
+    float:right;
+}
+
+.left_contain{
+    height: 100%;
+    width: 50%;
+    left:0%;
+}
+
+.div_name {
+    height: 200px;
+    width: 800px;
+    position: fixed;
+    top: 35%;
+    left: 37%;
+    margin-top: -100px;
+    margin-left: -400px;
+    font-size: 70px;
+    float:left;
+}
+
+.div_small_a {
+    height: 200px;
+    width: 700px;
+    position: fixed;
+    font-size: 25px;
+    color: #a9a9a9 ;
+    top: 45%;
+    left: 33.5%;
+    float:left;
+    margin-top: -100px;
+    margin-left: -350px;
+}
