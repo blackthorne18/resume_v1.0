@@ -3,6 +3,16 @@
 <head>
     <link rel="stylesheet" href="index.css">
     <title>Prajwal Bharadwaj</title>
+    <script>
+    function copy(that){
+        var inp =document.createElement('input');
+        document.body.appendChild(inp)
+        inp.value = "prajwal17@iiserb.ac.in"//that.textContent
+        inp.select();
+        document.execCommand('copy',false);
+        inp.remove();
+    }
+</script>
 </head>
 
 
@@ -19,10 +29,9 @@
 
 <div class="main_image"><img src="./pictures/main_pic.jpeg" style="margin:auto; width:400px;display:block" /></div>
 
-
 <div class="bottomnav">
     <a>Phone: +91 9741060814</a>
-    <a href="mailto:prajwal17@iiserb.ac.in">Email: prajwal17@iiserb.ac.in</a>
+    <a onclick="copy(this)">Email: prajwal17@iiserb.ac.in</a>
 </div>
 
 
