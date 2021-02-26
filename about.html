@@ -3,16 +3,6 @@
 <head>
     <link rel="stylesheet" href="index.css">
     <title>Prajwal Bharadwaj</title>
-    <script>
-    function copy(that){
-        var inp =document.createElement('input');
-        document.body.appendChild(inp)
-        inp.value = "prajwal17@iiserb.ac.in"//that.textContent
-        inp.select();
-        document.execCommand('copy',false);
-        inp.remove();
-    }
-</script>
 </head>
 
 <body class="body" scroll="no" style="overflow: hidden">
@@ -24,24 +14,18 @@
 </div>
 
 
-<div class="col-7 col-s-9">
-    <h1>About Me</h1>
-    <p>I am an aspiring Evolutionary Ecologist, DnD Enthusiast and more...</p>
+<div class="row">
+    <div class="col-6 col-s-9">
+        <h1>About Me</h1>
+        <p>I am an aspiring Evolutionary Ecologist, DnD Enthusiast and more...</p>
+    </div>
+    <div class="col-6 col-s-9">
+        <img src="./pictures/main_pic.jpeg" style="margin:auto; width:400px;display:block" />
+    </div>
 </div>
 
 
-<div class="bottomnav1">
-    <a onclick="copy(this)">
-        <img src="./pictures/gmail.png" style="width:50px;display:inline" />
-        <div class="tooltiptext1">click to copy</div>
-    </a>
-</div>
-<div class="bottomnav2">
-    <a href="https://www.linkedin.com/in/bharadwajprajwal">
-        <img src="./pictures/linkedin.png" style="width:40px;display:inline" />
-        <div class="tooltiptext2">go to link</div>
-    </a>
-</div>
+
 
 </body>
 </html>
