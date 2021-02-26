@@ -124,7 +124,7 @@
   overflow: hidden;
   position: fixed;
   top:85%;
-  left: 40%;
+  left: 35%;
   width: 15%;  
 }
 
@@ -164,7 +164,7 @@
   overflow: hidden;
   position: fixed;
   top:85%;
-  left:50%;
+  left:45%;
   width: 10%;
 }
 
@@ -196,6 +196,45 @@
 }
 
 .bottomnav2 a:hover .tooltiptext2{
+    visibility: visible;
+}
+
+.bottomnav3 {
+  overflow: hidden;
+  position: fixed;
+  top:85%;
+  left:53%;
+  width: 10%;
+}
+
+.bottomnav3 a {
+  float: left;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform .2s; /* Animation */
+}
+
+.bottomnav3 a:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.tooltiptext3 {
+    visibility: hidden;
+    position: relative;
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    top:0%;
+    left:0%;
+}
+
+.bottomnav3 a:hover .tooltiptext2{
     visibility: visible;
 }
 
