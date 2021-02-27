@@ -12,6 +12,23 @@
         document.execCommand('copy',false);
         inp.remove();
     }
+    function clicktoshow(text) {
+        var all=['con_int','con_skill','con_work','con_edu','con_con'];
+        var now=[];
+        for(var i=0;i<all.length;i++){
+            if(text !== all[i]){
+                now.push(all[i]);
+            }
+        }
+        
+        var x = document.getElementById(text);
+        if(x.style.display === "none"){x.style.display = "block";}
+        else{x.style.display = "none";}
+        for(var i=0;i<now.length;i++){
+            var y = document.getElementById(now[i]);
+            y.style.display = "none";
+        }
+    }
 </script>
 </head>
 
@@ -23,68 +40,138 @@
   <a href="about.html">About Me</a>
 </div>
 
-
 <div class="row">
-    <div class="col-6 col-s-9">
-        <div class="fancy_box1">
-            <h1 class="fancy_text1">My Interests</h1>
-            <p class="fancy_text1">
-                <li class="fancy_text1">To study the forces that drive evolution at individual and population levels</li>
-                <li class="fancy_text1">To explore the mechanisms that maintain mutualism between organisms</li>
-                <li class="fancy_text1">To understand the dynamics and characteristics of collective behaviour</li>
-            </p>
-        </div>
-    </div>
-    <div class="col-6 col-s-9">
-        <div class="fancy_box2">
-            <h1 class="fancy_text1">Off the books</h1>
-            <p class="fancy_text1">
-                <li class="fancy_text1">Strong grasp on communication and oration</li>
-                <li class="fancy_text1">Confident to lead teams</li>
-                <li class="fancy_text1">Always curious and optimistic</li>
-                <li class="fancy_text1">Good Experience with Coding. Known Programming Languages: Python, C</li>
-            </p>
-        </div>
+    <br><br><br>
+    <div class="col-5 col-s-4 fancybox">
+        <button class="worktiles1" onclick="clicktoshow('con_int')">My Interests</button>
     </div>
 </div>
 <div class="row">
-    <div class="col-6 col-s-9">
-        <div class="fancy_box1">
-            <h1 class="fancy_text1">Work Experience</h1>
-            <p class="fancy_text1">
-                <b class="fancy_text1">Team Member,iGEM Project 2020</b>- Department of Biological Sciences, IISER Bhopal<br>January 2020 - October 2020<br>
-            </p>
-            <p class="fancy_text1">
-                <b class="fancy_text1">Team Member,iGEM Project 2019</b>- Department of Biological Sciences, IISER Bhopal<br>January 2019 - October 2019<br>
-            </p>
-            <p class="fancy_text1">
-                <b class="fancy_text1">Research Project in Behavioral Ecology under Prof. Renee Borges</b> -Centre for Ecological Sciences, IISc Bangalore<br>May 2019 - July 2019<br>
-            </p>
-            <p class="fancy_text1">
-                <b class="fancy_text1">Reading Project under Dr. Vikas Jain</b> - Dept. of Biological Sciences, IISER Bhopal<br>Jan 2018- Sept 2018<br>
-            </p>
-            <p class="fancy_text1">
-                <b class="fancy_text1">Laboratory Project in NMKRV College, Bangalore</b><br>Dec 2016 - Jan 2017<br>
-            </p>
-        </div>
+    <div class="col-5 col-s-4 fancybox">
+        <button class="worktiles1" onclick="clicktoshow('con_skill')">My Skills</button>
     </div>
-    <div class="col-6 col-s-9">
-        <div class="fancy_box2">
-            <h1 class="fancy_text1">Education</h1>
-            <p class="fancy_text1">
-                <b class="fancy_text1" style="font-size:17.5px;">BS-MS Dual Degree (Biological Sciences)</b><br>
+</div>
+<div class="row">
+    <div class="col-5 col-s-4 fancybox">
+        <button class="worktiles1" onclick="clicktoshow('con_work')">Work Experience</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-5 col-s-4 fancybox">
+        <button class="worktiles1" onclick="clicktoshow('con_con')">Conferences</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-5 col-s-4 fancybox">
+        <button class="worktiles1" onclick="clicktoshow('con_edu')">Education</button>
+    </div>
+</div>
+
+
+<div class="mainworkbody" id="land">
+    <h1 class="mainworkbody_text">Landing Image</h1>
+    <p class="mainworkbody_text">Lorem ipsum sum bs</p>
+</div>
+
+
+<div class="mainworkbody" id="con_int" style="display:none;">
+    <h1 class="mainworkbody_text">My Interests</h1>
+    <p class="mainworkbody_text">
+        <li class="mainworkbody_text">To study the forces that drive evolution at individual and population levels</li>
+        <li class="mainworkbody_text">To explore the mechanisms that maintain mutualism between organisms</li>
+        <li class="mainworkbody_text">To understand the dynamics and characteristics of collective behaviour</li>
+    </p>
+</div>
+
+<div class="mainworkbody" id="con_skill" style="display:none;">
+    <h1 class="mainworkbody_text">Off the Books</h1>
+    <p class="mainworkbody_text">
+        <li class="mainworkbody_text">Strong grasp on communication and oration</li>
+        <li class="mainworkbody_text">Confident to lead teams</li>
+        <li class="mainworkbody_text">Always curious and optimistic</li>
+        <li class="mainworkbody_text">Good Experience with Coding. Known Programming Languages: Python, C</li>
+    </p>
+</div>
+
+<div class="mainworkbody" id="con_work" style="display:none;top:15%;height:75%;">
+    <h1 class="mainworkbody_text">Work and Experience</h1>
+    <p class="mainworkbody_text">
+        <p class="mainworkbody_text">
+            <b class="mainworkbody_text">Team Member,iGEM Project 2020</b><br>Department of Biological Sciences, IISER Bhopal<br>January 2020 - October 2020<br>
+            <i class="mainworkbody_text">Project: BIG-PIE (Beta-cells in Gut Producing Insulin)-</i> A new method of providing insulin to patients with diabetes (https://2020.igem.org/Team:IISER_Bhopal)<br>
+            > Helped Brainstorm project ideas during the nascent stage<br>
+            > Helped with building the Project Website<br>
+            > Contributed to Outreach and Science Communication by conducting seminars for School students<br>
+            <b class="mainworkbody_text">Gold Medal Winning Project at The Giant Jamboree, iGEM 2020</b><br>
+
+        </p>
+        <p class="mainworkbody_text">
+            <b class="mainworkbody_text">Team Member,iGEM Project 2019</b><br>Department of Biological Sciences, IISER Bhopal<br>January 2019 - October 2019<br>
+            <i class="mainworkbody_text">Project: ELSA (Ecoli Learns Suboptimal Acclimatisation ):</i> Synthetically modifying Ecoli to grow optimally at 4 degrees Celsius (https://2019.igem.org/Team:IISER_Bhopal)<br>
+            > Helped manage the Wet Lab experiments by performing Growth Curve experiments to analyse the effect of our Gene of Interest<br>
+            > Helped the Outreach and Integrated Human Practices team by talking to people in the industry regarding our product.<br>
+            <b class="mainworkbody_text">Silver Medal Winning Project at The Giant Jamboree, iGEM 2019</b><br>
+        </p>
+        <p class="mainworkbody_text">
+            <b class="mainworkbody_text">Research Project in Behavioral Ecology under Prof. Renee Borges</b><br>Centre for Ecological Sciences, IISc Bangalore<br>May 2019 - July 2019<br>
+            > Understanding the natural history and behaviour of the Pentatomid bug onFicus racemosa<br>
+            > Standardising a new system to work with as the Pentatomid bug is very poorly characterised<br>
+            > Trying to understand the relation between the Pentatomid bug and it's temporary, dependent hostFicus racemosa<br>
+            > Designing experiments to study phoresy in the Nematode-Fig Wasp system<br>
+        </p>
+        <p class="mainworkbody_text">
+            <b class="mainworkbody_text">Reading Project under Dr. Vikas Jain</b><br>Dept. of Biological Sciences, IISER Bhopal<br>Jan 2018- Sept 2018<br>
+            > A detailed study ofRecombinant DNA Technology<br>
+            > Review of papers followed by a presentation given during their lab meetings<br>
+        </p>
+        <p class="mainworkbody_text">
+            <b class="mainworkbody_text">Laboratory Project in NMKRV College, Bangalore</b><br>Dec 2016 - Jan 2017<br>
+            > Project was on Microbial analysis of water samples to test potability by using theMPN method<br>
+            > Was familiarized with laboratory techniques such as broth preparation and preparation of culture plates.<br>
+        </p>
+    </p>
+</div>
+
+<div class="mainworkbody" id="con_edu" style="display:none;">
+    <h1 class="mainworkbody_text">Education</h1>
+    <p class="mainworkbody_text">
+        <p class="mainworkbody_text">
+                <b class="mainworkbody_text" style="font-size:17.5px;">BS-MS Dual Degree (Biological Sciences)</b><br>
                 Indian Institute of Science Education and Research Bhopal<br>
                 Duration: 2017- 2022 (ongoing)<br>
                 CPI: 8.91/10<br>
-            </p>
-            <p class="fancy_text1">
-                <b class="fancy_text1" style="font-size:17.5px;">Class XII</b><br>
+        </p>
+        <p class="mainworkbody_text">
+                <b class="mainworkbody_text" style="font-size:17.5px;">Class XII</b><br>
                 Sri Kumaran Childrens Home CBSE Bangalore<br>
                 Year of Completion: 2017<br>
                 Percentage: 95% [Science Aggregate: 95%]<br>
-            </p>
-        </div>
-    </div>
+        </p>
+        <p class="mainworkbody_text">
+        <b class="mainworkbody_text" style="font-size:17.5px;">KVPY Fellowship (2016)</b><br>One of India's most highly selective and prestigious fellowships awarded to undergraduate students pursuing basic sciences by Department of Science and Technology, Govt.of India. ( less than 1% of total applicants ).
+        </p>
+    </p>
+</div>
+
+<div class="mainworkbody" id="con_con" style="display:none;top:15%;height:75%;">
+    <h1 class="mainworkbody_text">Conferences</h1>
+    <p class="mainworkbody_text">
+        <p class="mainworkbody_text">
+        <b class="mainworkbody_text">Climate Change and the Essential Service of Pollination:</b>
+Organized by Prof. Renee Borges in the Indian Institute of Science, Bangalore between 17th and 19th July 2019. A series of talks by eminent persons in the field of Pollination Biology was conducted along with a Practical demonstration session.
+        </p>
+        <p class="mainworkbody_text">
+<b class="mainworkbody_text">Nobel Prize Series India 2018:</b>
+Organized in association with Nobel Media and Government of India. The Nobel Prize Series is an exciting initiative that brings together Nobel Laureates and eminent scientists to stimulate innovation and creative thinking amongst young students of science.
+        </p>
+        <p class="mainworkbody_text">
+<b class="mainworkbody_text">TEDx Conferences 2016, 2017:</b>
+Organized by Infosys, Bangalore (2016) and by IISER Bhopal in Bhopal (2017).
+        </p>
+        <p class="mainworkbody_text">
+<b class="mainworkbody_text">Vijyoshi National Science Camp 2016:</b>
+Organized by and held in IISc Bangalore during December 2016. It is an annual national science camp in India organized by KVPY. It provides a forum for interactions between bright young students and leading researchers in various branches of Science.
+    </p>
 </div>
 
 </body>

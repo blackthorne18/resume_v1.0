@@ -250,6 +250,71 @@
     float:right;
 }
 
+.fancybox{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.mainworkbody{
+    position: absolute;
+    top:25%;
+    left: 40%;
+    height: 50%;
+    width: 50%;
+    background: white;
+    color: black;
+    border-color: white;
+    border-width: thick;
+    font-size: 20px;
+    transition: transform .2s; /* Animation */
+    overflow-y:auto;
+}
+
+.mainworkbody_text{
+    margin: 5%;
+    background: white;
+    color: black;
+}
+
+.mainworkbody:hover{
+    transform: scale(1.1);
+}
+
+.worktiles1{
+    height: 60%;
+    width: 60%;
+    font-size: 40px;
+    background-color: #28273f;
+    color: white;
+    transition: transform .2s; /* Animation */
+    border: none;
+}
+
+.worktiles1:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #28273f;
+    cursor: pointer;
+}
+
+.left_contain{
+    height: 100%;
+    width: 50%;
+    left:0%;
+}
+
+.div_name {
+    font-size: 70px;
+    float:left;
+    padding-top: 10%;
+    padding-left: 20%;
+    transition: transform .2s; /* Animation */
+}
+
+.div_name:hover{
+    transform: scale(1.1);
+}
+
 .fancy_text1{
     background-color: #28273f;
     color: white;
@@ -273,44 +338,6 @@
 .fancy_box1:hover .fancy_text1{
     background-color: #F5F5F5;
     color: #28273f;
-}
-
-.fancy_box2{
-    width: 80%;
-    padding: 2%;
-    margin-left: 7.5%;
-    margin-top: 4%;
-    transition: transform .2s; /* Animation */
-}
-
-.fancy_box2:hover{
-    background-color: #F5F5F5;
-    color: #28273f;
-    box-shadow: 5px 10px #808080;
-    transform: scale(1.1);
-}
-
-.fancy_box2:hover .fancy_text1{
-    background-color: #F5F5F5;
-    color: #28273f;
-}
-
-.left_contain{
-    height: 100%;
-    width: 50%;
-    left:0%;
-}
-
-.div_name {
-    font-size: 70px;
-    float:left;
-    padding-top: 10%;
-    padding-left: 20%;
-    transition: transform .2s; /* Animation */
-}
-
-.div_name:hover{
-    transform: scale(1.1);
 }
 
 .div_small_a {
