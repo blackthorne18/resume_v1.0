@@ -13,7 +13,7 @@
         inp.remove();
     }
     function clicktoshow(text) {
-        var all=['con_int','con_skill','con_work','con_edu','con_con'];
+        var all=['land','con_int','con_skill','con_work','con_edu','con_con'];
         var now=[];
         for(var i=0;i<all.length;i++){
             if(text !== all[i]){
@@ -22,9 +22,12 @@
         }
         
         var x = document.getElementById(text);
+        var px= document.getElementById(all[0]);
         if(x.style.display === "none"){x.style.display = "block";}
         else{x.style.display = "none";}
+        if(x.style.display==="none"){px.style.display = "block";}
         for(var i=0;i<now.length;i++){
+            if(now[i]===all[0] && x.style.display=="none"){continue;}
             var y = document.getElementById(now[i]);
             y.style.display = "none";
         }
@@ -68,9 +71,8 @@
 </div>
 
 
-<div class="mainworkbody" id="land">
-    <h1 class="mainworkbody_text">Landing Image</h1>
-    <p class="mainworkbody_text">Lorem ipsum sum bs</p>
+<div class="mainworkbody" id="land" style="top:17%;height:65.5%;">
+    <img src="./wordcloud/wordcloud-2.png" style="width:100%;"/>
 </div>
 
 
