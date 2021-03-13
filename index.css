@@ -318,14 +318,18 @@
 .fancy_text1{
     background-color: #28273f;
     color: white;
+    font-size: 20px;
 }
 
 .fancy_box1{
-    width: 80%;
-    padding: 2%;
-    margin-left: 20%;
-    margin-top: 4%;
+    position: absolute;
+    width: 45%;
+    height: 70%;
+    padding: 1.75%;
+    margin-left: 10%;
+    margin-top: 1.5%;
     transition: transform .2s; /* Animation */
+    overflow-y:auto;
 }
 
 .fancy_box1:hover{
