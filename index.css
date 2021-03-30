@@ -276,6 +276,10 @@
     color: black;
 }
 
+.mainworkbody_text u:after {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+}
+
 .mainworkbody:hover{
     transform: scale(1.1);
 }
